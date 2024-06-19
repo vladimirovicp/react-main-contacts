@@ -1,0 +1,24 @@
+# Logs
+contacts/logs
+contacts/*.log
+contacts/npm-debug.log*
+contacts/yarn-debug.log*
+contacts/yarn-error.log*
+contacts/pnpm-debug.log*
+contacts/lerna-debug.log*
+
+contacts/node_modules
+contacts/dist
+contacts/dist-ssr
+contacts/*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
