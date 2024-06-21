@@ -7,6 +7,8 @@ export async function loader() {
   }
 
 export default function Root() {
+    const { contacts } = useLoaderData();
+
     return (
       <>
         <div id="sidebar">
@@ -35,7 +37,7 @@ export default function Root() {
             </form>
           </div>
           <nav>
-          {contacts.length ? (
+            {contacts.length ? (
             <ul>
               {contacts.map((contact) => (
                 <li key={contact.id}>
