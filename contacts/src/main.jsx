@@ -5,11 +5,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-
-
-import Root, { loader as rootLoader, action as rootAction, } from "./routes/root";
 import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
+import Contact, {
+  loader as contactLoader,
+} from "./routes/contact";
+import Root, { loader as rootLoader, action as rootAction, } from "./routes/root";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,7 @@ const router = createBrowserRouter([
       {
         path: "contacts/:contactId",
         element: <Contact />,
+        loader: contactLoader,
       },
     ],
   },
